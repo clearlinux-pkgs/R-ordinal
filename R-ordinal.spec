@@ -4,7 +4,7 @@
 #
 Name     : R-ordinal
 Version  : 2018.4.19
-Release  : 1
+Release  : 2
 URL      : https://cran.r-project.org/src/contrib/ordinal_2018.4-19.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/ordinal_2018.4-19.tar.gz
 Summary  : Regression Models for Ordinal Data
