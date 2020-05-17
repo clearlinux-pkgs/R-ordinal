@@ -4,18 +4,16 @@
 #
 Name     : R-ordinal
 Version  : 2019.12.10
-Release  : 19
+Release  : 20
 URL      : https://cran.r-project.org/src/contrib/ordinal_2019.12-10.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/ordinal_2019.12-10.tar.gz
 Summary  : Regression Models for Ordinal Data
 Group    : Development/Tools
 License  : GPL-2.0 GPL-2.0+
 Requires: R-ordinal-lib = %{version}-%{release}
-Requires: R-lme4
 Requires: R-numDeriv
 Requires: R-ucminf
 Requires: R-xtable
-BuildRequires : R-lme4
 BuildRequires : R-numDeriv
 BuildRequires : R-ucminf
 BuildRequires : R-xtable
@@ -44,21 +42,22 @@ lib components for the R-ordinal package.
 
 %prep
 %setup -q -c -n ordinal
+cd %{_builddir}/ordinal
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1576531426
+export SOURCE_DATE_EPOCH=1589748993
 
 %install
-export SOURCE_DATE_EPOCH=1576531426
+export SOURCE_DATE_EPOCH=1589748993
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
