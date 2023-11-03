@@ -4,7 +4,7 @@
 #
 Name     : R-ordinal
 Version  : 2022.11.16
-Release  : 42
+Release  : 43
 URL      : https://cran.r-project.org/src/contrib/ordinal_2022.11-16.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/ordinal_2022.11-16.tar.gz
 Summary  : Regression Models for Ordinal Data
