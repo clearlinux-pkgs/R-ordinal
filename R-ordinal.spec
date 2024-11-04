@@ -7,7 +7,7 @@
 #
 Name     : R-ordinal
 Version  : 2023.12.4.1
-Release  : 46
+Release  : 47
 URL      : https://cran.r-project.org/src/contrib/ordinal_2023.12-4.1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/ordinal_2023.12-4.1.tar.gz
 Summary  : Regression Models for Ordinal Data
